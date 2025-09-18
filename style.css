@@ -13,114 +13,109 @@ body {
     overflow: hidden;
 }
 
-@media (max-width: 768px) {
-
-  /* HEADER */
-  header {
-    width: 100%;
-    padding: 15px 20px;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .logo {
-    font-size: 1.5rem;
-  }
-
-  /* CONTAINER GERAL */
-  .container {
-    min-height: auto;
-    padding-top: 120px; /* espaço pro header fixo */
-    overflow: auto; /* permite rolar no mobile */
-  }
-
-  .list {
-    width: 100%;
-  }
-
-  .item {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .content {
-    width: 100%;
+/* Reset básico */
+* {
+    margin: 0;
     padding: 0;
-    align-items: center;
-  }
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
 
-  /* IMAGENS */
-  .product-img {
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  .product-img img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  /* TEXTOS */
-  .product-name {
-    font-size: 2rem;
-    margin: 10px 0;
-  }
-
-  .product-description {
-    font-size: 1rem;
-    line-height: 1.4;
-    margin: 10px 0;
-    max-width: 90%;
-  }
-
-  /* BOTÕES */
-  .btn {
-    width: 90%;
+/* Corpo da página */
+body {
+    background-color: #0f0f1e; /* fundo escuro */
+    color: white;
     font-size: 16px;
-    padding: 12px 0;
-    margin: 15px auto;
+    overflow-x: hidden; /* evita scroll horizontal */
+}
+
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
     display: block;
-  }
+}
 
-  /* SETAS */
-  .aroows {
-    width: 100%;
-    justify-content: space-between;
-    bottom: 120px;
-    top: auto;
+/* Botões */
+.btn {
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Setas de navegação */
+.aroows {
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    padding: 0 15px;
-  }
+    width: 120%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 0 20px;
+}
 
-  .aroows-btn {
-    width: 35px;
-    height: 35px;
-  }
+.aroows-btn {
+    cursor: pointer;
+    background: rgba(15, 15, 30, 0.7);
+    border: 2px solid #08067c;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
 
-  /* INDICADORES */
-  .indicators {
-    bottom: 60px;
-  }
+.aroows-btn:hover {
+    background: rgba(15, 15, 30, 0.9);
+    transform: scale(1.1);
+}
 
-  .numbers {
-    font-size: 2rem;
-  }
+/* Responsivo */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
 
-  /* FOOTER */
-  .container_final {
-    font-size: 9px;
-    padding: 8px;
-    position: relative;
-  }
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    .aroows {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .aroows-btn {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .aroows-btn {
+        padding: 6px;
+    }
 }
 
 
