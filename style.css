@@ -14,7 +14,7 @@ body {
 }
 
 /* Ajustes mobile */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
     body {
         font-size: 14px;
@@ -22,32 +22,32 @@ body {
     }
 
     .container {
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
         padding: 0 10px;
     }
 
     /* Centralizar o texto e evitar sobreposição */
     .product-title {
-        font-size: 2rem; /* diminui o tamanho no celular */
+        font-size: 1.2rem; /* diminui o tamanho no celular */
         line-height: 1.2;
         text-align: center;
         word-break: break-word; /* evita que palavras saiam da tela */
-        margin: 20px 0;
+        margin: 15px 0;
     }
 
     .product-description {
         font-size: 0.9rem;
-        line-height: 1.4;
+        line-height: 1.1;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     /* Ajustar setas */
     .aroows {
         width: 100%;
         justify-content: space-between;
-        padding: 0 15px;
+        padding: 0 20px;
         top: auto;
         bottom: 10%; /* posiciona na parte inferior */
         left: 50%;
