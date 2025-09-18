@@ -407,6 +407,7 @@ header nav ul li:hover::after {
   color: #00f7ff;
 }
 
+
 @media (max-width: 1024px) {
   header {
     width: 100%;
