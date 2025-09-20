@@ -1,0 +1,106 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* para os círculos absolutos ficarem dentro */
+}
+
+.contato{
+    margin-top: 20px;
+    position: relative; /* importante para os círculos não bloquearem o conteúdo */
+    z-index: 1; /* garante que o conteúdo fique acima dos círculos */
+}
+
+.contato h2{
+    color: aqua;
+    padding-bottom:  20px;
+}
+.contato p{
+    color: rgb(164, 231, 231);
+    padding-bottom: 10px;
+}
+.logo-marca{
+    border-radius: 40px;
+    font-weight: 600;
+    margin: 10px;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.logo-marca:hover::before{
+    opacity: 1;
+}
+
+.tech-circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* isso garante que os círculos não bloqueiem clique */
+    z-index: 0;
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 247, 255, 0.2);
+}
+
+.circle:nth-child(1){
+    width: 200px;
+    height: 200px;
+    left: 10%;
+    top: 10%;
+}
+
+.circle:nth-child(2){
+    width: 300px;
+    height: 300px;
+    left: 80%;
+    top: 80%;
+}
+
+.circle:nth-child(3){
+    width: 100px;
+    height: 100px;
+    left: 60%;
+    top: 70%;
+}
+
+.circle:nth-child(4){
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    top: 20%;
+}
+
+.circle:nth-child(5){
+    width: 170px;
+    height: 170px;
+    left: 50%;
+    top: 55%;
+}
+
+.contatos-info{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: deepskyblue;
+    position: relative;
+    z-index: 2; /* garante que os links fiquem acima dos círculos */
+}
+
+.contatos-info a{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: deepskyblue;
+    transition: all 0.3s ease;
+}
+
+.contatos-info a:hover {
+    color: aqua;
+    text-decoration: underline;
+}

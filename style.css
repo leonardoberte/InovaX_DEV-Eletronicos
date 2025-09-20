@@ -407,105 +407,22 @@ header nav ul li:hover::after {
   color: #00f7ff;
 }
 
-
-@media (max-width: 1024px) {
-  header {
-    width: 100%;
-    padding: 15px 20px;
-  }
-
-  header nav ul {
-    gap: 20px;
-  }
-
-  .product-name {
-    font-size: 3rem;
-  }
-
-  .product-description {
-    font-size: 1rem;
-  }
+header nav ul li a {
+  color: white; /* cor padrão */
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  body {
-    overflow: auto; /* permite scroll no celular */
-  }
-
-  .list {
-    width: 95%;
-  }
-
-  .item {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .product-img img {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .content {
-    width: 100%;
-    padding: 20px;
-    align-items: center;
-  }
-
-  .product-name {
-    font-size: 2rem;
-    margin: 10px 0;
-  }
-
-  .product-description {
-    font-size: 0.95rem;
-    margin: 10px 0;
-  }
-
-  .btn {
-    font-size: 0.9rem;
-    padding: 10px 16px;
-  }
-
-  .aroows {
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  .numbers {
-    font-size: 2rem;
-  }
-
-  .dot {
-    width: 25px;
-  }
-
-  .container_final {
-    font-size: 8px;
-    padding: 8px;
-  }
+header nav ul li a:hover {
+  color: #00f7ff; /* cor quando passa o mouse */
 }
 
-@media (max-width: 480px) {
-  .logo {
-    font-size: 1.2rem;
-  }
+header nav ul li a:visited {
+  color: white; /* evita ficar roxo */
+}
 
-  header nav ul {
-    gap: 10px;
-    font-size: 0.8rem;
-  }
-
-  .product-name {
-    font-size: 1.5rem;
-  }
-
-  .product-description {
-    font-size: 0.85rem;
-  }
-
-  .btn {
-    font-size: 0.8rem;
-    padding: 8px 12px;
-  }
+header nav ul li a:active {
+  color: #00f7ff;
 }
