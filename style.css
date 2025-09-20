@@ -426,3 +426,57 @@ header nav ul li a:visited {
 header nav ul li a:active {
   color: #00f7ff;
 }
+
+/* Ajustes mobile */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    /* Centralizar o texto e evitar sobreposição */
+    .product-title {
+        font-size: 2rem; /* diminui o tamanho no celular */
+        line-height: 1.2;
+        text-align: center;
+        word-break: break-word; /* evita que palavras saiam da tela */
+        margin: 20px 0;
+    }
+
+    .product-description {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* Ajustar setas */
+    .aroows {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 15px;
+        top: auto;
+        bottom: 10%; /* posiciona na parte inferior */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .aroows-btn {
+        padding: 10px;
+    }
+
+    /* Ajustar imagens */
+    .product-image {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+}
